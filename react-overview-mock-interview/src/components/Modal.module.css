@@ -1,0 +1,26 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(3px);
+  z-index: 10;
+}
+
+.modal {
+  position: fixed;
+  top: 12vh;
+  width: min(40rem, calc(100% - 2rem));
+  border: none;
+  background: transparent;
+  padding: 0;
+  overflow: visible;
+  z-index: 11;
+  animation: warp-in 0.25s ease-out;
+}
+
+@keyframes warp-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(-1rem);
+  }
+}

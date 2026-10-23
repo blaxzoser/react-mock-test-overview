@@ -1,0 +1,37 @@
+.post {
+    list-style: none;
+    background: linear-gradient(160deg, var(--panel-edge) 0%, var(--space) 100%);
+    border: 1px solid var(--crawl-dim);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 0 12px rgba(47, 243, 255, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.post:hover {
+    border-color: var(--sith);
+    box-shadow: 0 0 20px var(--sith-dim);
+    transform: translateY(-3px);
+}
+
+.body {
+    color: var(--crawl);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.author {
+    font-family: var(--heading);
+    font-size: 0.85rem;
+    color: var(--jedi);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-shadow: 0 0 6px rgba(47, 243, 255, 0.8);
+    margin: 0 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 232, 31, 0.2);
+}

@@ -1,0 +1,31 @@
+.posts {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 1.25rem;
+}
+
+.empty {
+    margin: 4rem auto 0;
+    max-width: 32rem;
+    text-align: center;
+    perspective: 400px;
+}
+
+/* Tilted like the opening crawl */
+.empty > * {
+    transform: rotateX(18deg);
+}
+
+.empty h2 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    text-shadow: 0 0 12px rgba(255, 232, 31, 0.4);
+}
+
+.empty p {
+    color: var(--muted);
+    letter-spacing: 0.1em;
+}
